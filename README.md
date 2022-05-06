@@ -4,7 +4,7 @@ This is a Chrome extention that Nim created to replace his Google Chrome "new ta
 
 1. [Download](https://github.com/NimJay/new-tab-page-chrome-extension/archive/refs/heads/main.zip) (and unzip) or clone this repository.
 1. Install this Chrome extention:
-   1. Go to [chrome://extensions](chrome://extensions) on Google Chrome.
+   1. Visit `chrome://extensions` on Google Chrome.
    1. Turn on "Developer mode" using top-right toggle switch.
    1. Click "Load unpacked" and select this `new-tab-page-chrome-extension` folder.
 1. Open a new tab to check if it's working.
