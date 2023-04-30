@@ -5,5 +5,8 @@
   "manifest_version": 3,
   "chrome_url_overrides": {
     "newtab": "new-tab.html"
-  }
+  },
+  "permissions": [
+    "storage"
+  ]
 }

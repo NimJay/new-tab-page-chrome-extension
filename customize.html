@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Customize your new tab page</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                font-size: 20px;
+            }
+            main {
+                margin: auto;
+                padding: 100px 25px 0 25px;
+                max-width: 1000px;
+            }
+            textarea {
+                font-size: 17px;
+                font-family: monospace;
+                width: 100%;
+                min-height: 600px;
+                padding: 20px;
+            }
+            button {
+                font-size: 20px;
+                margin-top: 20px;
+                border: none;
+                outline: none;
+                padding: 10px 40px;
+                border-radius: 5px;
+                background-color: rgb(209, 230, 208);
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <p>This page lets your customize your new tab page.</p>
+            <textarea id="new-tab-config"></textarea>
+            <button id="save">Save</button>
+        </main>
+        <script src="new-tab-config.js"></script>
+        <script src="customize.js"></script>
+    </body>
+</html>
