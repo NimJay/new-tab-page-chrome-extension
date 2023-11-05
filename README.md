@@ -1,4 +1,4 @@
-This is a Chrome extention replaces your Google Chrome "new tab" page with a list of links your get to customize.
+This Chrome extension replaces your Google Chrome "new tab" page with a list of links you get to customize.
 
 ## Install on Google Chrome
 
