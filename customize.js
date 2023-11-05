@@ -40,6 +40,8 @@ function setSaveStatus(statusMessage, isError) {
     const saveStatusEl = document.getElementById('save-status');
     if (isError) {
         saveStatusEl.classList.add('save-status-error');
+    } else {
+        saveStatusEl.classList.remove('save-status-error');
     }
     saveStatusEl.innerHTML = statusMessage;
 }
