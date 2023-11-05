@@ -1,2 +1,5 @@
+# Files created on Apple macOS.
+.DS_Store
+
 # Nim has a local file called zscrap.js containing random notes and code.
 zscrap.js
