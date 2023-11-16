@@ -2,6 +2,16 @@ This Chrome extension replaces your Google Chrome "new tab" page with a list of 
 
 ## Install on Google Chrome
 
+1. Open this ["New Tab Page" Chrome extension on the Chrome Web Store](https://chromewebstore.google.com/detail/new-tab-page/apodhjfcbagagmpogjoihddnejghjbaf).
+1. Click "Add to Chrome". 
+1. Open a new tab. Your new tab page will be replaced by this Chrome extension.
+1. Chrome might ask "Is this the new tab you were expecting?". Select "Keep changes".
+1. On the new tab page, click "Customize this page".
+
+## Install in "developer mode"
+
+To work with the code for this Chrome extension, you need to install this extension in "developer mode":
+
 1. [Download](https://github.com/NimJay/new-tab-page-chrome-extension/archive/refs/heads/main.zip) (and unzip) or clone this repository.
 1. Install this Chrome extention:
    1. Visit `chrome://extensions` on Google Chrome.
