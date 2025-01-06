@@ -9,13 +9,16 @@
             font-size: 20px;
             line-height: 1.8em;
         }
+
         a {
             color: rgb(73, 104, 206);
             text-decoration: none;
         }
+
         ol {
             margin-top: 0;
         }
+
         main {
             display: flex;
             align-items: flex-start;
@@ -24,6 +27,7 @@
             max-width: 800px;
             margin: auto;
         }
+
         #link-list-1 {
             display: inline-block;
             font-size: 24px;
@@ -32,6 +36,7 @@
             padding-left: 0;
             list-style: none;
         }
+
         #link-list-2 {
             display: inline-block;
             font-size: 16px;
@@ -40,12 +45,27 @@
             padding-left: 0;
             list-style: none;
         }
+
+        li.link-list-li a {
+            opacity: 0.85;
+        }
+
+        li.link-list-li-low-usage a {
+            /* Caution: Making low-usage links' less noticeable may cause them to be even less used that it should be. */
+            opacity: 0.7;
+        }
+
+        li.link-list-li-high-usage a {
+            opacity: 1;
+        }
+
         aside {
             font-size: 20px;
             margin: auto;
             max-width: 800px;
             opacity: 0.5;
         }
+
         aside:hover {
             opacity: 1;
         }
@@ -60,8 +80,10 @@
     <aside>
         <p id="random-quote"></p>
         <a href="/customize.html">Customize this page</a>
+        <p>Number of links visited: <span id="num-of-links-visited"></span></p>
     </aside>
     <script src="./new-tab-config.js"></script>
+    <script src="./visits.js"></script>
     <script src="./new-tab.js"></script>
 </body>
 
