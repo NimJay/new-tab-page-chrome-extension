@@ -49,7 +49,6 @@ function getPercentageOfYearComplete() {
  */
 function getPercentageOfYearInMonth(month) {
     const thisYear = new Date().getFullYear();
-    debugger;
     const startOfMonth = new Date(thisYear, month, 1);
     const endOfMonth = new Date(thisYear, month + 1, 1);
     const millisecondsInMonth = endOfMonth.getTime() - startOfMonth.getTime();
