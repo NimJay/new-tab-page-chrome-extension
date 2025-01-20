@@ -1,3 +1,5 @@
+import { renderYearProgressBar } from './year-progress-bar-section/year-progress-bar-section.js';
+
 function renderLinkList1(newTabConfig) {
     const linkList1Element = document.getElementById('link-list-1');
     let innerHTML = '';
@@ -41,6 +43,7 @@ async function renderPage() {
     renderLinkList2(newTabConfig);
     renderRandomQuote(newTabConfig);
     renderNumOfLinksVisited();
+    renderYearProgressBar();
 }
 
 /**
