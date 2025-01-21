@@ -1,7 +1,7 @@
 {
   "name": "New Tab Page",
   "description": "This Chrome extension replaces your Google Chrome \"new tab\" page with a list of links you get to customize.",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "manifest_version": 3,
   "chrome_url_overrides": {
     "newtab": "new-tab.html"
