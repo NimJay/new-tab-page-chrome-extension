@@ -27,9 +27,9 @@ To work with the code for this Chrome extension, you need to install this extens
 
 To publish a new version of this Chrome extension on the Chrome Web Store, follow these steps:
 
-1. Update the `manifest_version` in the `manifest.json` file. Commit your change.
+1. Update the `version` in the `manifest.json` file. Commit your change.
 1. Go to the [Chrome Web Store Developer Dashboard](https://chrome.google.com/webstore/devconsole/).
-1. Zip the `src/` folder and upload it as a new package on the Chrome Web Store. Make sure to include the update to `manifest_version`. You will need to wait on a review.
+1. Zip the `src/` folder and upload it as a new package on the Chrome Web Store. Make sure to include the update to `version`. You will need to wait on a review.
 1. Create a [new release on GitHub](https://github.com/NimJay/new-tab-page-chrome-extension/releases).
 
 ## Report bugs, feature requests, and questions
