@@ -58,7 +58,7 @@ function getPercentageOfYearInMonth(month) {
     return millisecondsInMonth / millisecondsInYear;
 }
 
-function computeAndSetWidthsOfInnerBar() {
+function computeAndSetWidthOfInnerBar() {
     const progressBarDiv = document.getElementById('year-progress-bar-section-inner-bar');
     const width = getPercentageOfYearComplete() * 100;
     progressBarDiv.style.width = `${width}%`;
@@ -79,7 +79,7 @@ function computeAndSetWidthsOfMonths() {
 
 function renderYearProgressBar() {
     setHtml();
-    computeAndSetWidthsOfInnerBar();
+    computeAndSetWidthOfInnerBar();
     computeAndSetWidthsOfMonths();
 }
 
