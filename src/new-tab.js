@@ -1,3 +1,4 @@
+import { renderMonthProgressBar } from './month-progress-bar-section/month-progress-bar-section.js';
 import { renderYearProgressBar } from './year-progress-bar-section/year-progress-bar-section.js';
 
 function renderLinkList1(newTabConfig) {
@@ -43,6 +44,7 @@ async function renderPage() {
     renderLinkList2(newTabConfig);
     renderRandomQuote(newTabConfig);
     renderNumOfLinksVisited();
+    renderMonthProgressBar();
     renderYearProgressBar();
 }
 

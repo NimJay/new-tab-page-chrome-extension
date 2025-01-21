@@ -1,0 +1,26 @@
+#month-progress-bar-section {
+    margin-top: 20px;
+    width: 100%;
+    /* The height is the sum of the heights of its children .*/
+    height: 46px;
+}
+
+#month-progress-bar-section-outer-bar {
+    height: 10px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+#month-progress-bar-section-inner-bar {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#month-progress-bar-section-date {
+    height: 36px;
+    /* The width needs to support strings like "Apr 3". */
+    min-width: 45px;
+    font-size: 12px;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.5);
+}
