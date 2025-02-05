@@ -1,5 +1,6 @@
 import { renderMonthProgressBar } from './month-progress-bar-section/month-progress-bar-section.js';
 import { renderYearProgressBar } from './year-progress-bar-section/year-progress-bar-section.js';
+import { testWebLlm } from './web-llm.js';
 
 function renderLinkList1(newTabConfig) {
     const linkList1Element = document.getElementById('link-list-1');
@@ -72,4 +73,5 @@ function isLowUsageHref(href) {
 
 window.onload = function () {
     renderPage();
+    testWebLlm();
 };
