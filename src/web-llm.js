@@ -63,8 +63,8 @@ async function generateUsingLlm(systemPrompt, userQuery) {
 async function testWebLlm() {
     console.log("Testing WebLlm...");
     await generateUsingLlm(
-        "Tell me which 2 phrases are most related to the phrase I provide.",
-        "Here's the phrase: Chatbot design doc\nWhich of the following phrases are most related?\nDog research\nPet store\nVet\nHugging Face\nGemini\nChatbot design doc",
+        "Give me a score from 1 to 3.",
+        "How similar are these two phrases? Chatbot and box\n3: Very related.\n2: Slightly related.\n1: Not related at all.",
     );
 }
 
