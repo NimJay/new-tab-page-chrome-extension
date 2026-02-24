@@ -1,30 +1,17 @@
 import { renderMonthProgressBar } from './month-progress-bar-section/month-progress-bar-section.js';
 import { renderYearProgressBar } from './year-progress-bar-section/year-progress-bar-section.js';
 
-function renderLinkList1(newTabConfig) {
-    const linkList1Element = document.getElementById('link-list-1');
+function renderLinkList(newTabConfig) {
+    const linkListElement = document.getElementById('link-list');
     let innerHTML = '';
-    newTabConfig.linkList1.forEach((link) => {
+    newTabConfig.linkList.forEach((link) => {
         const href = buildHrefValue(link.url, link.name);
         const liClass = `link-list-li`
             + `${isHighUsageHref(link.url) ? ' link-list-li-high-usage' : ''}`
             + `${isLowUsageHref(link.url) ? ' link-list-li-low-usage' : ''}`;
         innerHTML += `<li class="${liClass}"><a href="${href}">${link.name}</a></li>`;
     });
-    linkList1Element.innerHTML = innerHTML;
-}
-
-function renderLinkList2(newTabConfig) {
-    const linkList2Element = document.getElementById('link-list-2');
-    let innerHTML = '';
-    newTabConfig.linkList2.forEach((link) => {
-        const href = buildHrefValue(link.url, link.name);
-        const liClass = `link-list-li`
-            + `${isHighUsageHref(link.url) ? ' link-list-li-high-usage' : ''}`
-            + `${isLowUsageHref(link.url) ? ' link-list-li-low-usage' : ''}`;
-        innerHTML += `<li class="${liClass}"><a href="${href}">${link.name}</a></li>`;
-    });
-    linkList2Element.innerHTML = innerHTML;
+    linkListElement.innerHTML = innerHTML;
 }
 
 function renderRandomQuote(newTabConfig) {
@@ -40,8 +27,7 @@ function renderNumOfLinksVisited() {
 
 async function renderPage() {
     const newTabConfig = await loadNewTabConfig();
-    renderLinkList1(newTabConfig);
-    renderLinkList2(newTabConfig);
+    renderLinkList(newTabConfig);
     renderRandomQuote(newTabConfig);
     renderNumOfLinksVisited();
     renderMonthProgressBar();
